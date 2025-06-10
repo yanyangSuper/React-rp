@@ -2,7 +2,7 @@
  * @Author: yangyang 1710001012@qq.com
  * @Date: 2025-05-29 11:32:59
  * @LastEditors: yangyang 1710001012@qq.com
- * @LastEditTime: 2025-06-04 15:44:32
+ * @LastEditTime: 2025-06-05 17:43:54
  * @FilePath: /my-app/src/view/practice/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -10,6 +10,9 @@ import { useParams, useSearchParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import SonPr from "./sonpr";
 import { useImmer } from 'use-immer';
+import Crud from "./crud";
+// 提供上下文
+import { LevelContext } from './levelContext.js';
 export default function Practice(props) {
 
   /**
@@ -154,6 +157,7 @@ const changeGirl = () => {
     console.log(data, 'data');
     setDecree(decreeContent);
   };
+
   return (
     <>
       <h1>practice</h1>
@@ -164,7 +168,7 @@ const changeGirl = () => {
       >
         返回首页
       </button>
-      <p>state快照值：{number}</p>
+      {/* <p>state快照值：{number}</p>
       <p>setDate(number + 1)式更新</p>
       <button onClick={changeNum}>+3</button>
       <p>立即更新函数更新</p>
@@ -188,7 +192,10 @@ const changeGirl = () => {
         <p>{girl.age}</p>
       </div>
       <button onClick={changeGirl}>改变那女孩</button>
-      <SonPr decree={decreeStr} handleClick={handleClick}></SonPr>
+      <SonPr decree={decreeStr} handleClick={handleClick}></SonPr> */}
+      <LevelContext.Provider  value={ 33 }> 
+        <Crud></Crud>
+      </LevelContext.Provider>
     </>
   );
 }

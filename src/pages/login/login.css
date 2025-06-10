@@ -1,0 +1,26 @@
+.login-wrap {
+    background-color: #F5F5F5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form {
+    width: 500px;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.login-form-title {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+.login-form-type {
+    margin-bottom: 0;
+    margin-top: -5px;
+    font-size: 12px;
+}
+.login-form-checkbox {
+    display: flex;
+}
