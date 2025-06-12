@@ -2,7 +2,7 @@
  * @Author: yangyang 1710001012@qq.com
  * @Date: 2022-11-10 19:01:44
  * @LastEditors: yangyang 1710001012@qq.com
- * @LastEditTime: 2025-06-10 15:16:41
+ * @LastEditTime: 2025-06-12 10:49:55
  * @FilePath: /my-app/src/App.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -14,6 +14,7 @@ import Practice from "./pages/practice/index";
 import Special from "./pages/practice/specail";
 import Login from "./pages/login/login";
 import NotFound from "./pages/notFound/notFound";
+import Index from "./pages/index";
 
 // App.js
 function Home() {
@@ -58,7 +59,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Index />} />
         <Route path="about" element={<About />} />
         <Route path="tic" element={<Tic />} />
         <Route path="practice" element={<Practice />} />
