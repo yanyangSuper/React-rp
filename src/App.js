@@ -2,7 +2,7 @@
  * @Author: yangyang 1710001012@qq.com
  * @Date: 2022-11-10 19:01:44
  * @LastEditors: yangyang 1710001012@qq.com
- * @LastEditTime: 2025-06-12 10:49:55
+ * @LastEditTime: 2025-06-18 15:17:58
  * @FilePath: /my-app/src/App.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -15,21 +15,7 @@ import Special from "./pages/practice/specail";
 import Login from "./pages/login/login";
 import NotFound from "./pages/notFound/notFound";
 import Index from "./pages/index";
-
-// App.js
-function Home() {
-  return (
-    <>
-      <main>
-        <h2>Welcome to the homepage!</h2>
-        <p>You can do this, I believe in you.</p>
-      </main>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
-    </>
-  );
-}
+import Home from "./pages/home/home";
 
 function About() {
   return (
@@ -51,6 +37,9 @@ function About() {
         <Link to="/special" className="App-link">
           Special
         </Link>
+        <Link to="/home" className="App-link">
+          Home
+        </Link>
       </nav>
     </>
   );
@@ -60,6 +49,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="home" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="tic" element={<Tic />} />
         <Route path="practice" element={<Practice />} />
