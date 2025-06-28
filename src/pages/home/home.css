@@ -1,3 +1,15 @@
 .banner {
     height: calc(100vh - 56px);
 }
+.logo-text {
+    text-align-last: justify;
+    font-family: FZDaHei-B02S;
+}
+.first-menu {
+    /* width: 150px; */
+    /* height: 61px; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* background: url(//www.shiyan.gov.cn/material/images/index-nav-bg.png); */
+    /* background-size: 100% 100%; */
+}
